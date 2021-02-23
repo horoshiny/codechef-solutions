@@ -1,0 +1,15 @@
+t=int(input())
+b=0
+num=0
+num1=0
+for i in range(t):
+    n=int(input())
+    num=120-n
+    m=input()
+    x=[int(i) for i in str(m)]
+    b=x.count(1)
+    num1=90-b
+    if num1<=num:
+        print("YES")
+    else:
+        print("NO")
