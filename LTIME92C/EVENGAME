@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    x=map(int,input().split())
+    add=sum(list(x))
+    if add%2==0:
+        print(1)
+    else:
+        print(2)
