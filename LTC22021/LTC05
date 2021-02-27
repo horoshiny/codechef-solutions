@@ -1,0 +1,13 @@
+t=int(input())
+for i in range(t):
+    s1,s2,s3=input().split()
+    if len(s1)==len(s2) and len(s2)==len(s3) and len(s1)==len(s3):
+        s11=sorted(s1)
+        s22=sorted(s2)
+        s33=sorted(s3)
+        if s11==s22 and s22==s33 and s33==s11:
+            print("Possible")
+        else:
+            print("Not Possible")
+    else:
+        print("Not Possible")
