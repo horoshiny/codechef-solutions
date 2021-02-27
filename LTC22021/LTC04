@@ -1,0 +1,32 @@
+t=int(input())
+for i in range(t):
+    n,s1,s2=input().split()
+    if n=="A":
+        s2=s2.lower()
+        print(s1.lower()+s2.capitalize())
+    elif n=="B":
+        print(str(s1.lower())+"_"+str(s2.lower()))
+    elif n=="C":
+        print(str(s1.upper())+"_"+str(s2.upper()))
+    elif n=="D":
+        s1=s1.lower()
+        s2=s2.lower()
+        print(str(s1.capitalize())+"-"+str(s2.capitalize()))
+    else:
+        res = "" 
+        res1 = ""
+        for i in range(len(s1)): 
+            if not i % 2 : 
+                res = res + s1[i].lower() 
+            else: 
+                res = res + s1[i].upper() 
+        for i in range(len(s2)): 
+            if not i % 2 : 
+                res1 = res1 + s2[i].lower() 
+            else: 
+                res1 = res1 + s2[i].upper() 
+        print(str(res)+"|"+str(res1))
+            
+       
+
+        
