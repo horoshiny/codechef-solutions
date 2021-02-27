@@ -1,0 +1,8 @@
+import math
+t=int(input())
+for i in range(t):
+    l,b=map(int,input().split())
+    area=l*b
+    num=math.gcd(l,b)
+    n=math.pow(num,2)
+    print(int(area/n))
