@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(t):
+    m,h=map(int,input().split())
+    num=pow(h,2)
+    if m/num<=18:
+        print(1)
+    elif m/num<=24:
+        print(2)
+    elif m/num<=29:
+        print(3)
+    else:
+        print(4)
